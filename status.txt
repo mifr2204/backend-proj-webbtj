@@ -1,0 +1,243 @@
+-----menu schema är klart
+-----user schema är klart?
+------allm home kopplar upp databas
+admin, kom in utan token? 
+----routa om efter login
+------ta bort home och about när i admin
+ändra sen så token är 1 h
+
+***
+funktioner
+****
+Add- ALLT KLART ?
+Home- allt klart?
+about- allt klart?
+login - allt klart?
+create user
+admin - allt klart?
+Delete - allt klart?
+edit - allt klart?
+validera email? - klart
+ev validera längd osv på inputs
+
+
+
+* API
+-användare
+-meny
+
+sida
+-login/registrering
+  -hantera meny
+-se meny
+-presentation
+
+
+Vald målgrupp.
+Vald grafisk profil
+
+En webbtjänst/API skapat 
+enligt Moment 2/3 med 
+--registrering/inloggning enligt Moment 4 samt 
+--frontend-applikation som använder denna webbtjänst för sitt data.
+--Vald funktionalitet innehållande interaktivitet/dynamik
+ --skapad med kunskap från kursens olika moment.
+
+Din uppgift blir att skapa en webbplats av typen företagspresentation
+ för ett företag som erbjuder försäljning av mat. 
+ Till exempel en restaurang, pizzeria, café eller liknande.
+
+Företaget vill kunna marknadsföra sig själva samt
+ presentera den mat de serverar samt,
+ eventuellt också att gäster kan boka bord eller
+  lägga en beställning för "take away" (valfritt).
+
+Du väljer själv vilket företaget är (fiktivt).
+
+Exempel
+
+Företag A: Lyxig restaurang i centrala Stockholm som vill kunna presentera sin meny och 
+uppdatera den vid behov. Menyn består utav diverse förrätter, 
+varmrätter och efterrätter samt också en dryckeslista.
+ De vill också att gäster ska kunna boka bord online via deras webbplats.
+ *****
+Företag B: En lunchrestaurang efter E4an med löpande veckomenyer.
+ Ägaren vill kunna lägga in flera veckomenyer samtidigt för att slippa en massa 
+ administration och att aktuell matsedel alltid visas på webbplatsen. 
+ Vill också att gäster ska kunna förboka sin lunch som "take away", så att maten är 
+ redo när gästen kommer.
+Företaget kan ingenting om kod och vill därför ha ett administrations-gränssnitt där 
+medarbetare kan logga in och ändra/lägga till meny eller matsedel. Eventuellt även kunna 
+se och hantera bokningar eller beställningar som gjorts.
+
+---Webbplatsen ska skapas som ett "headless CMS", 
+---det vill säga med en administrations-webbplats 
+---ör att hantera webbplatsens innehåll
+ --- som sedan presenterar sitt data i JSON-format, 
+ ---som därefter läses in från frontend-webbsidan.
+
+
+Kunna skapa dynamiska webbplatser uppdelad i 
+olika delar för publik webbplats och webbtjänst.
+Kunna använda tidigare moment i kursen i en större 
+sammanhängande webbplats.
+Presentera en projektrapport beskrivande din lösning 
+av problemet. Omfattning på denna projektrapport ska vara 
+ca 10-15 sidor samt följa Mittuniversitetets rapportmall.
+Teori och läsanvisningar
+Läsanvisningar från tidigare moment.
+Uppgift
+
+
+
+
+
+
+Webbplatsen ska skapas i tre separata delar:
+
+----En REST-webbtjänst med stöd för CRUD (Create, Read, Update & Delete), 
+--där åtkomst till skyddade delar sköts med JWT (JSON Web Tokens).
+Glöm ej att tänka på säkerhets-aspekter,
+som att kontrollera data innan lagring i databas.
+
+--Till denna webbtjänst behövs ett administrations-gränssnitt
+-- som personalen på företaget kan använda för att lagra, 
+ --radera och ändra data.
+--Denna webbplats skall skapas med HTML, CSS och JavaScript
+-- - ni väljer själva om denna ska vara en del av den publika webbplatsen,
+ -- eller fristående administrations-webbplats.
+--En publik webbplats som använder ("konsumerar") 
+--webbtjänsten i punkt 1, och använder denna som datakälla.
+
+--Webbplatsen kan med fördel använda SASS/SCSS för CSS, 
+--och vara konstruerad över ett build-system där kompilering/sammanslagning/transpilering 
+--är automatiserad.
+--Om du känner dig bekväm att på egen hand använda ett ramverk, 
+--som exempelvis Angular, för frontend-delen av projektet så går det bra. 
+--Detta är dock ej ett lärmoment i denna kurs.
+
+--Grundkrav
+--Uppgiften är uppdelad i två separata delar: webbtjänst och webbplats - 
+--där ni själva väljer hur skyddade och ej skyddade delar ska presenteras 
+--(lämpligt här är att publika besökare ej ser delarna för administration som är skyddade).
+Webbplatsen ska kodas i enlighet med HTML-standarden med bra kommentarer.
+Webbplatsen ska validera.
+--Webbplatsen ska designas med hjälp av CSS (SASS/SCSS är ok att använda).
+--Webbplatsen ska använda din REST-webbtjänst som datakälla, med möjlighet 
+--till läsa ut, ändra, radera och lagra data.
+--JWT (JSON Web Tokens) ska användas för att hantera åtkomst till skyddade delar i webbtjänsten.
+--Data ska lagras i en databas av valfri typ - valfri relations-datas eller NoSQL-databas.
+Alla kodfiler ska vara kommenterade.
+Webbplatsen fungerar på olika typer av enheter med responsiv webbdesign.
+Korrekt utformad projektrapport.
+--Git ska användas för webbplatsens källkod (både webbtjänst och webbplats), med beskrivande README-filer.
+--Obligatorisk funktionalitet
+--De delar som ska finnas med i den publika webbplatsen är enligt nedan:
+
+*En meny/matsedel ska finnas utskriven dynamiskt på webbplatsen. 
+Antingen på startsidan eller som en egen undersida.
+*En presentation av företaget ska finnas någonstans på webbplatsen.
+Frivillig funktionalitet
+För att samla poäng för möjlighet till högre betyg kan ytterligare funktionalitet
+ implementeras i projektet.
+Denna funktionalitet är valfri, men ska på ett avsevärt sätt tillföra något till helheten i webbplatsen.
+
+Obs: Ange eventuell frivillig funktionalitet tydligt i introduktionsdelen i rapporten.
+
+Några förslag på lämplig funktionalitet:
+
+Funktionalitet för att boka ett bord, beställa "take away" eller liknande där användaren får ange lämpliga uppgifter så som namn, telefonnummer, datum med mera.
+Möjlighet att ladda upp bild(er) till webbplatsen. Till exempel till meny, banner eller andra ställen på webbplatsen
+Kontakt-formulär för att skicka meddelande till företaget.
+Möjlighet för gäster att lämna recensioner om sitt besök.
+
+-Steg 1 – Utformning av webbplats
+En enkel planering över webbplatsens utformning ska först göras. 
+Denna planering kan presenteras med olika hjälpmedel:
+
+Wireframe
+Designskisser/moodboard
+Diagram beskrivande databasens tabeller och relationer (se Figur 1)
+Exempel på ER-diagram
+Figur 1 - Exempel på ER-diagram
+Steg 2 – Skapande av webbplats
+Webbplatsen ska skapas utifrån föregående planering.
+
+Webbplatsen ska också testas i minst tre olika webbläsare (Exempelvis Chrome, Edge, Firefox, Safari eller motsvarande) för att säkerhetsställa att den fungerar likadant oberoende av webbläsare. HTML- och CSS-kod skall vara korrekta enligt W3C:s valideringstjänst.
+
+Rapportskrivning
+Skapa en rapport i storleksordningen 10-15 sidor. Använd Mittuniversitetets rapportmall för tekniska rapporter (för projektuppgift) som grund.
+
+En lämplig disposition för denna uppgift kan vara:
+
+Sammanfattning
+Här sammanfattar du ditt arbete. Tanken är att man ska kunna läsa denna sektion, och snabbt förstå vad resten av rapporten handlar om. Tänk lite som baksidan av en bok.
+Introduktion / inledning (välj en)
+Gå igenom vad som ska göras i projektet. Här ligger problemmotiveringen, vilket är vad som är själva arbetet som ska utföras. ""En webbplats till företaget A för att marknadsföra företaget samt den mat de serverar...".
+Du kan vara specifik här, och detaljerat beskriva de olika saker som ska göras på projektet (vilka "problem" ska lösas).
+Teori / Bakgrundsmaterial (välj en)
+Här går du igenom vad man som utomstående behöver kunna för att förstå resten av rapporten. Definera och förklara exempelvis förkortningar och olika tekniker. Exempel: "JSON Web Tokens används för att...".
+Metod
+Gå igenom vilken eller vilka metoder som kommer att användas för att lösa problemen från problemmotiveringen. Exempel: "ER-diagram kommer användas för att skapa de databas-tabeller som...".
+Konstruktion / Lösningsalternativ (välj en)
+Här ligger det själva praktiska arbetet, om hur olika saker lösts. Försök knyta an till metod-delen, och få en röd tråd genom hela rapporten.
+Resultat
+Här går du igenom resultatet av projektet. Du går igenom och kollar om alla "problem" från problemmotiveringen blivit lösta, att de mål du satt upp har mötts. Här är det viktigt att vara objektiv, och inte lägga in några värderingar - dessa spar du till Slutsatser/Analys/Diskussion.
+Slutsatser / Analys / Diskussion (välj en)
+Här gör du en utvärdering av ditt arbete. Vad har gått bra och vad har gått dåligt? Vad hade kunnat göras annorlunda? Här kan du lägga in personliga åsikter om det egna arbetet.
+Källförteckning
+Källförteckning ska alltid finnas med i rapporter. Alla påståenden ska underbyggas med källor - vilket kan vara allt från föreläsningsmaterial till böcker och internet-webbplatser.
+Använd med fördel illustrationer i din rapport. Tänk dock på att alla illustrationer ska märkas ut (exempel: Figur 1.1) och refereras till i din löpande text - exempel: "Som Figur 1.1 visar...".
+
+Större illustrationer som designskisser och liknande kan bifogas som bilaga i slutet av rapporten. Tänk då på att referera till denna i din löpande text.
+
+Publicering eller video-demonstration
+Det finns alternativ för redovisning av uppgiften:
+
+Publicera din webbsida, admin-gränssnitt och webbtjänst på publikt tillgänglig webbhost för testkörning.
+Var noga med att testköra efter publicering, och säkerställ att allting fungerar korrekt.
+Skapa en video-demonstration av din lösning där du visar och berättar hur samtliga delar funkar, visa publik webbplats, admin-gränsnitt och webbtjänst. Video-demonstrationen bör vara max sju minuter lång.
+Källkoden för webbtjänst och webbplats ska finnas publicerade på Github (eller motsvarande webbtjänst). Använd olika repositorys för detta.
+
+Publicering i webbforum / feedback
+Skapa en ny forumtråd i webbforumet "Projekt - Presentation av färdig projekt-webbplats" där du bifogar en länk till den publicerade webbplatsen eller till din demo-video.
+
+
+Kommentera även två kurskamraters webbplats - ge konstruktiv kritik.
+
+Saker att kolla på:
+
+Är webbplatsens syfte och mål tydligt?
+Är användargränssnittet förståeligt och tydligt?
+Fungerar webbplatsen väl på olika typer av enheter, med responsiv webbdesign?
+Sprid ut era kommentarer bland kurskamrater, så att så många som möjligt får feedback på sitt projekt.
+
+Betygskriterier
+Projektet betygsätts med betyget A-F.
+
+För att uppnå godkänd (E) ska samtliga punkter under grundkrav och obligatorisk funktionalitet vara genomförda. Det motsvarar 1p på varje delmoment i poänglistan förutom för "frivillig funktionalitet".
+
+Denna uppgift ges poäng som används för att räkna ut ett slutbetyg för kursen. Godkänd är 4p, och max är 14p.
+Dessa poäng fördelas utifrån kvalitén på de olika momenten i projektet.
+
+Poängfördelning
+
+Projektrapport: 1-3p.
+Webbtjänstens komplexitet och omfattning: 1-3p.
+Webbplats och admin-gränssnitt: 1-3p.
+Frivillig funktionalitet: 0-5p
+Poängen omräknas sedan till ett slutbetyg på kursen enligt nedan:
+
+E: 3-4p
+D: 5-6p
+C: 7-10p
+B: 11-12p
+A: 13-14p
+Inlämning
+Projektuppgiften lämnas in som:
+
+Webblänk till publik webbplats och administrations-gränsnitt alternativt länk till video-demonstration som kommentar i inlämningslådan. Glöm ej: bifoga inloggnings-uppgifter för att lärare ska kunna testköra.
+Webblänk till Git-repository (med beskrivande README-fil) för din REST-webbtjänst.
+Webblänk till Git-repository (med beskrivande README-fil) till din webbplats (har du delat upp din webbplats i två, för admin och publik med ett separat repo för vardera - lämna in länk till båda).
+Projektrapport i PDF-format.
+Glöm ej att göra dina Git-repositories publika.
