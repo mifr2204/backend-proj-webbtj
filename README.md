@@ -8,11 +8,10 @@ Länk till webbsida
 https://studenter.miun.se/~mifr2204/backend/project/index.html
 
 länk till git webbtjänst
-https://github.com/mifr2204/backend-mom4-webbtj.git
+https://github.com/mifr2204/backend-proj-sida.git
 
 länk till git webbsida
-https://github.com/mifr2204/backend-mom4-sida.git
-
+https://github.com/mifr2204/backend-proj-sida.git
 
 Installation och databas
 Mongodb används som databas av APIet. 

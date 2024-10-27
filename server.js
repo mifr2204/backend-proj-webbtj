@@ -71,7 +71,7 @@ app.post("/api/menu", authenticateToken, async(req, res) => {
     }
 });
 
-//radera meny item
+//radera meny
 app.delete("/api/menu/:id", authenticateToken, async(req, res) => {
     
     try {
