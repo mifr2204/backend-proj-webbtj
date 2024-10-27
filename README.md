@@ -8,7 +8,7 @@ Länk till webbsida
 https://studenter.miun.se/~mifr2204/backend/project/index.html
 
 länk till git webbtjänst
-https://github.com/mifr2204/backend-proj-sida.git
+https://github.com/mifr2204/backend-proj-webbtj.git
 
 länk till git webbsida
 https://github.com/mifr2204/backend-proj-sida.git
@@ -21,19 +21,18 @@ Användning
 Hur man nå APIet:
 
 Metod	Ändpunkt	    Beskrivning
-GET	    /workplaces	    Hämtar alla tillgängliga arbetsplatser.
-POST	/workplaces	    Lagrar en ny arbetsplats.
-PUT	    /workplaces/:ID	Uppdaterar en arbetsplats. 
-DELETE	/workplaces/:ID	Raderar en arbetsplats.
+GET	    /api/menu	    Hämtar alla tillgängliga produkt.
+POST	/api/menu	    Lagrar en ny produkt.
+PUT	    /api/menu/:ID	Uppdaterar en produkt. 
+DELETE	/api/menu/:ID	Raderar en produkt.
 
 
-Ett arbetsplats-objekt returneras/skickas som JSON med följande struktur:
+Ett meny-objekt returneras/skickas som JSON med följande struktur:
 
 {
-   "companyname": "Frösunda",
-   "location": "Nässjö",
-   "startdate": "2010-01-01",
-   "enddate": "2016-02-01",
-   "title": "Personlig assistent/teamleader",
-   "description": "Vara hos olika kunder och hjälpa dom i vardagen, planera schema med mera"
+   "name": "Margerita",
+   "type": "pizza",
+   "description": "beskrivning",
+   "prize": "50",
+ 
 }
